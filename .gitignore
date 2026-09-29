@@ -1,0 +1,6 @@
+# Files Git should NOT upload to GitHub
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
