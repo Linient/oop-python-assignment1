@@ -29,17 +29,16 @@ python-oop-assignment/
 
 ## Setup
 
-You need Python 3.10 or newer.
+Python 3.10 or newer is required.
 
 ```bash
 # 1. Get the code
-git clone <this-repository-url>
+git clone git remote add origin https://github.com/Linient/oop-python-assignment1.git
 cd python-oop-assignment
 
 # 2. (Recommended) create a virtual environment - a private box of libraries for this project
 python -m venv .venv
 .venv\Scripts\activate          # Windows
-# source .venv/bin/activate     # Mac / Linux
 
 # 3. Install the libraries
 pip install -r requirements.txt
@@ -47,18 +46,12 @@ pip install -r requirements.txt
 
 ## How to run
 
-**Notebooks:** start Jupyter from the project folder (so `from src... import ...` works), open a notebook and choose
-**Kernel → Restart & Run All**.
+   - start Jupyter from the project folder using command 'jupyter notebook', open a notebook and choose "Kernel → Restart & Run All".
 
-```bash
-jupyter notebook
-```
+   **Tests:**
 
-**Tests:**
+   - use command "python -m pytest"
 
-```bash
-python -m pytest
-```
 
 All 48 tests pass, and every notebook runs top to bottom without errors. Random numbers use fixed seeds
 (`np.random.default_rng(seed)`), so the results are the same on every run.
@@ -96,5 +89,5 @@ Each notebook's *Findings & Limitations* section has the full discussion.
 
 ## Declaration of AI use
 
-An AI coding assistant (Claude, by Anthropic) was used to recommed modules and generate the test scripts. I then worked through the code and the results, and I can explain how each part works.
+An AI coding assistant (Claude, by Anthropic) was used to recommend modules (data visualization, etc) and generate the test scripts. I then worked through the code and the results, and I can explain how each part works.
 
